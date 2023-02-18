@@ -21,12 +21,17 @@ input {
 }
 
  input:checked + label {
-    background-color: rgb(16, 13, 13);
+    background-color: salmon;
 } 
 input:checked + .label .circle {
     animation: toggleOn  linear forwards;
 }
-
+.icons {
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
 
 @keyframes toggleOn {
     0%{
