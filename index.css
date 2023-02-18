@@ -2,26 +2,29 @@ label {
     padding: 4px;
     border-radius: 20px;
     position: absolute;
-    width: 80px;
-    height: 25px;
+    width: 85px;
+    height: 30px;
     background-color: rgb(75, 78, 75);
 }
 input {
     visibility: hidden;
 }
 .circle {
-    height: 25px;
-    width: 20px;
-    border-radius: 100%;
-    background-color: rgb(214, 35, 35);
-    animation: toggleoff 1s linear forwards;
+    width: 34px;
+    background-color: white;
+    height: 34px;
+    border-radius: 50%;
+    top: 3px;
+    position: absolute;
+    left: 3px;
+    animation: toggleOff 4s linear forwards;
 }
 
-/* input:checked + label {
-    background-color: rgb(255, 255, 255);
-} */
+ input:checked + label {
+    background-color: rgb(16, 13, 13);
+} 
 input:checked + .label .circle {
-    animation: toggleOn 1s linear forwards;
+    animation: toggleOn  linear forwards;
 }
 
 
@@ -30,14 +33,14 @@ input:checked + .label .circle {
         transform: translateX(0);
     }
     100%{
-        transform: translateX(60px);
+        transform: translateX(50px);
     }
 }
 @keyframes toggleoff {
     0%{
-        transform: translateX(0);
+        transform: translateX(50px);
     }
     100%{
-        transform: translateX(60px);
+        transform: translateX(0);
     }
 }
